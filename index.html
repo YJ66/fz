@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body> 
+    <p></p>
+    <script>
+        
+      var str='522624199605303617';
+      function Str(str){
+          var strs='';
+          var html='';
+         str=str.substring(0,14);
+            str+="****";
+            for(var i=0;i<str.length;i++){
+              
+               if(i>5&&i<13){
+                   html+=`
+                     <b>${str[i]}</b>
+                   `
+               }else{
+                html+=str[i];
+               }
+            }
+         return html;
+          }
+          var html= Str(str);
+          var b=document.getElementsByTagName('p')[0].innerHTML=html;
+        
+        
+        
+    </script>
+</body>
+</html>
